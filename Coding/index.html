@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Store Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Mini Store Management System</h1>
+            <p class="subtitle">Stock and Inventory Management</p>
+        </header>
+
+        <div class="main-content">
+            <div class="console-container">
+                <div class="console-header">
+                    <span>Management Console</span>
+                    <button onclick="clearConsole()" class="clear-btn">Clear</button>
+                </div>
+                <div id="console" class="console-output">
+                    <div class="welcome-message">
+                        <strong>Welcome to the management system!</strong><br>
+                        Results will be displayed here...
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h3>Run Levels:</h3>
+                <div class="button-group">
+                    <button onclick="runLevel1()" class="btn btn-primary">Level 1</button>
+                    <button onclick="runLevel2()" class="btn btn-secondary">Level 2</button>
+                    <button onclick="runLevel3()" class="btn btn-tertiary">Level 3</button>
+                    <button onclick="clearConsole()" class="btn btn-clear">Clear Console</button>
+                </div>
+                
+                <div class="info-section">
+                    <h4>📋 Instructions:</h4>
+                    <ul>
+                        <li><strong>Level 1</strong>: Basic demonstration with fixed variables</li>
+                        <li><strong>Level 2</strong>: User interaction with prompts</li>
+                        <li><strong>Level 3</strong>: Complete interactive menu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>JavaScript Exercise - Mini Store Management</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
