@@ -1,18 +1,20 @@
+<div align="center">
+
 # Mini Store Management System
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
 
-*A console-based JavaScript application demonstrating core programming principles through a mini-store management simulation.*
+*A console-based JavaScript application built as a complete solution to a structured lab exercise, demonstrating core programming principles and problem-solving skills.*
 
 </div>
 
 ## 📋 Table of Contents
 
-- [About the Project](#-about-the-project)
-- [✨ Key Features](#-key-features)
-- [🏗️ Project Architecture & Learning Progression](#️-project-architecture--learning-progression)
+- [🎯 The Lab Exercise](#-the-lab-exercise)
+- [✨ Solution & Features](#-solution--features)
+- [🏗️ Project Architecture](#️-project-architecture)
 - [🚀 Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -23,53 +25,86 @@
 
 ---
 
-## 🌟 About the Project
+## 🎯 The Lab Exercise
 
-This project is a pedagogical implementation of a mini-store management system, developed as a practical lab exercise. It serves as a comprehensive demonstration of fundamental JavaScript concepts, including variable manipulation, control flow (`if/else`, `switch`), loops (`while`), and user interaction via the console. The application is structured in three progressive levels, each introducing more complex logic and features.
+This project was developed as a practical solution to a multi-level lab assignment. The objective was to progressively build a JavaScript program from basic variable manipulation to a full-fledged interactive console application.
+
+<details>
+<summary><strong>Level 1 — Product Discovery (Core Concepts)</strong></summary>
+
+**Objective**: Understand variables, types, and operators.
+
+**Instructions**:
+1.  Declare variables: `productName`, `price`, `quantity`, `category`.
+2.  Calculate total stock value (`price * quantity`).
+3.  Display a descriptive sentence.
+4.  Apply a 10% discount if `price > 5000`.
+5.  Check stock level: "Sufficient Stock" if `quantity > 10`, otherwise "Low Stock".
+6.  Display a warning if total stock value `> 20,000`.
+
+</details>
+
+<details>
+<summary><strong>Level 2 — Dynamic Interaction (Loops & Input)</strong></summary>
+
+**Objective**: Work with logic using loops and user input.
+
+**Instructions**:
+1.  Use `prompt()` to get product name, price, and quantity from the user.
+2.  Calculate and display the total stock value.
+3.  Display "This product's stock is valuable" if total `> 10,000`, otherwise "Moderate stock."
+4.  Ask the user if they want to add another product. If "yes", repeat the process; if "no", exit the program.
+
+</details>
+
+<details>
+<summary><strong>Level 3 — Interactive Menu (System Simulation)</strong></summary>
+
+**Objective**: Simulate a small management system with nested conditions.
+
+**Instructions**:
+1.  Display a menu with options: Add product, Calculate value, Check status, Quit.
+2.  Handle user input to navigate the menu.
+3.  Implement logic for each menu choice.
+4.  Provide detailed stock status: "Out of Stock", "Low Stock", or "Stock Available".
+5.  Use a `while(true)` loop to keep the menu running until the user chooses to quit.
+6.  Validate user input for menu choices.
+
+</details>
 
 ---
 
-## ✨ Key Features
+## ✨ Solution & Features
 
--   **Dynamic Product Management**: Add products with name, price, and quantity through an interactive console prompt.
--   **Real-time Stock Valuation**: Automatically calculate and display the total monetary value of the current stock.
--   **Conditional Logic**: Implements smart business rules, such as automatic discounts for high-value items and stock status alerts.
--   **Interactive Menu System**: A user-friendly, menu-driven interface for seamless navigation and control.
--   **Input Validation**: Robust handling of user input to ensure smooth and predictable application behavior.
+This application successfully implements all requirements from the lab exercise, evolving through each level of complexity.
+
+-   ✅ **Progressive Implementation**: The codebase is structured to reflect the three learning stages of the lab.
+-   ✅ **Dynamic Product Management**: Allows for the addition of products with user-defined attributes via `prompt()`.
+-   ✅ **Automated Calculations**: Instantly calculates stock value and applies conditional discounts.
+-   ✅ **Intelligent Stock Status**: Provides real-time feedback on stock levels based on predefined business rules.
+-   ✅ **Interactive Menu System**: A robust, menu-driven interface that provides a clear and intuitive user experience.
+-   ✅ **Robust Control Flow**: Employs loops and conditional statements to manage program state and user interactions effectively.
 
 ---
 
-## 🏗️ Project Architecture & Learning Progression
+## 🏗️ Project Architecture
 
-The application is built incrementally across three distinct levels, showcasing a clear learning path.
+The solution is structured in three progressive levels, directly mirroring the lab's pedagogical approach. This architecture demonstrates a clear understanding of how to build complexity incrementally.
 
-### Level 1: Core Concepts
-*Focus: Variables, Data Types, and Basic Operators.*
--   Demonstrates variable declaration and basic arithmetic operations.
--   Introduces `if/else` conditional statements for applying discounts and checking stock levels.
-
-### Level 2: Dynamic Interaction
-*Focus: Loops and User Input.*
--   Integrates `prompt()` for dynamic data entry from the user.
--   Utilizes a `while` loop to enable the addition of multiple products in a single session, enhancing user experience.
-
-### Level 3: Interactive Menu System
-*Focus: Control Flow and System Simulation.*
--   Implements a `while(true)` loop to create a persistent main menu.
--   Employs a `switch` or nested `if/else` structure to handle complex user choices and program flow.
--   Provides granular feedback on stock status (Out of Stock, Low Stock, Available).
+-   **Level 1**: Focuses on static data and foundational `if/else` logic.
+-   **Level 2**: Introduces user interaction with `prompt()` and loop control for repetitive tasks.
+-   **Level 3**: Culminates in a stateful application with a persistent menu system, showcasing advanced control flow and user experience design in a console environment.
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+Follow these instructions to run the application locally.
 
 ### Prerequisites
 
--   A JavaScript runtime environment. You can use:
-    -   **Node.js** (Recommended) - [Download & Install Node.js](https://nodejs.org/)
-    -   Any modern web browser's developer console (e.g., Chrome, Firefox).
+-   **Node.js** (Recommended) - [Download & Install Node.js](https://nodejs.org/)
+-   A modern web browser (alternative method).
 
 ### Installation
 
@@ -86,32 +121,30 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 #### Using Node.js (Recommended)
 
-Run the application from your terminal. The main script is typically `main.js`, `app.js`, or `index.js`.
+Run the main script from your terminal:
 
 ```bash
 node index.js
 ```
 
-The interactive menu will appear in your terminal, guiding you through the available options.
-
 #### Using a Web Browser
 
-1.  Open the `index.html` file in your browser.
-2.  Open the Developer Console (`F12` or `Ctrl+Shift+I`).
-3.  The program will start, and you will interact with it via the browser's `prompt` dialogs.
+1.  Open the `index.html` file.
+2.  Open the Developer Console (`F12`).
+3.  Interact with the application via the `prompt()` dialogs.
 
 ---
 
 ## 🛠️ Skills Demonstrated
 
-This project highlights proficiency in the following areas:
+This project serves as a practical demonstration of the following technical skills:
 
--   **JavaScript Fundamentals**: Variables, data types, operators, and functions.
--   **Control Flow**: Effective use of `if/else`, `switch` statements, and loops (`while`).
--   **User Interaction**: Handling input and output in a console environment.
--   **Problem-Solving**: Translating business logic into functional code.
--   **Code Structure**: Organizing code into logical, progressive levels.
--   **Version Control**: Basic use of Git and GitHub for project management.
+-   **JavaScript Fundamentals**: Variables, data types, arithmetic operators.
+-   **Control Flow**: Advanced use of `if/else`, `switch`, and `while` loops.
+-   **User Interaction**: Handling input and output in a non-graphical environment.
+-   **Problem-Solving**: Deconstructing a complex problem into manageable, logical steps.
+-   **Incremental Development**: Building a project in stages, adding functionality layer by layer.
+-   **Code Organization**: Structuring code to be readable, maintainable, and logical.
 
 ---
 
